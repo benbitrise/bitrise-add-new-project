@@ -38,7 +38,7 @@ echo " => Creating a temporary directory for banp (bitrise-add-new-project) ..."
 temp_dir="$(mktemp -d -t banpXXXXXX)"
 bin_path="${temp_dir}/banp"
 
-download_url="https://github.com/bitrise-io/bitrise-add-new-project/releases/download/latest/banp-$(uname -s)-$(uname -m)"
+download_url="https://github.com/bitrise-io/bitrise-add-new-project/releases/download/0.14.1/banp-$(uname -s)-$(uname -m)"
 echo " => Downloading banp from (${download_url}) to (${bin_path}) ..."
 curl -fL --progress-bar --output "${bin_path}" "${download_url}"
 echo " => Making it executable ..."
